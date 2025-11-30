@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cbtis14 | Acapulco</title>
+    <link rel="icon" href="logocebetis.png" type="image/png">
+    <link rel="stylesheet" href="index_cb_estilo.css">
+    
+</head>
+
+<body>
+
+    <div id="zona-hover"></div>
+
+    <div id="panel">
+        <h2>Ayuda</h2>
+        <p style="text-align:center;"></p>
+        <div class="panel-opcion">Valoración de docente</div>
+<div class="panel-opcion">Comentarios o quejas</div>
+
+    </div>
+
+    <header>
+        <nav>
+            <h2 class="logo">CBTis14</h2>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#calendarios">Calendarios</a></li>
+                <li><a href="#Noticias">Noticias</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#nuestra">Nuestra Escuela</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+         <div class="hero-top-logo">
+        <img src="logocebetis.png" alt="CBTis 14">
+        <span>Excelencia Tecnológica</span>
+    </div>
+        <div class="hero-content">
+            <h1>Bienvenido a la página oficial<br> CBTis 14</h1>
+            <p class="descripcion">
+                Te damos la bienvenida a CBTis 14, conoce nuestra oferta educativa, noticias, historia y toda la
+            información que necesites para formar parte de nuestra comunidad.
+            </p>
+           
+        </div>
+
+        <div class="hero-right">
+            
+            <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <img src="cbtis.png" alt="Imagen 1">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="cb.png" alt="Imagen 2">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="rally.png" alt="Imagen 3">
+        </div>
+        <div class="swiper-slide">
+            <img src="c.png" alt="Imagen 4">
+        </div>
+        <div class="swiper-slide">
+            <img src="a.png" alt="Imagen 5">
+        </div>
+
+    </div>
+
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    
+    <div class="swiper-pagination"></div>
+</div>
+
+        </div>
+    </section>
+
+    <section id="historia" class="seccion">
+        <h2>Historia</h2>
+        <p>(Insertar historia cbtis)</p>
+
+    </section>
+
+    <section id="calendarios" class="seccion">
+        <h2>Calendarios</h2>
+        <p>(Insertar calendarios cbtis)</p>
+    </section>
+
+    <section id="Noticias" class="seccion">
+    <h2>Noticias</h2>
+    
+    <div class="swiper swiperNoticias">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide card">1</div>
+            <div class="swiper-slide card">2</div>
+            <div class="swiper-slide card">3</div>
+            <div class="swiper-slide card">4</div>
+            <div class="swiper-slide card">5</div>
+            <div class="swiper-slide card">6</div>
+
+        </div>
+
+        <div class="swiper-pagination swiper-pagination-noticias"></div>
+    </div>
+    </section>
+
+    <section id="especialidades" class="seccion">
+        <h2>Especialidades</h2>
+        <p>(Insertar especialidades cbtis)</p>
+    </section>
+<section id="nuestra" class="seccion">
+        <h2>Conoce nuestra escuela</h2>
+        <p>(Insertar video cbtis)</p>
+
+        <div class="social-networks"> 
+    
+    <a href="https://www.facebook.com/share/1AfefUnrc3/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/cbtis_14?igsh=MWdrOXJ4YXE2bDZmdw==" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@cbtis14oficial?_r=1&_t=ZS-91oKzQSQF7f" class="tiktok"><i class="fab fa-tiktok"></i></a>
+    
+</div>
+    </section>
+
+
+<div id="modalValoracion" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <h2>Valoración de docente</h2>
+        <p></p>
+    </div>
+</div>
+
+
+<div id="modalQuejas" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <h2>Comentarios o quejas</h2>
+        <p class="instruccion-modal">
+            Envíanos tus comentarios, sugerencias o reportes. ¡Tu opinión nos ayuda a mejorar!
+        </p>
+        <div class="contacto-email-container">
+            <i class="fas fa-envelope gmail-icon"></i>  
+            <a href="mailto:comenta.cbtis.14@gmail.com?subject=Queja%20o%20Comentario%20CBTis14">
+                comenta.cbtis.14@gmail.com
+            </a>
+        </div>
+        <p class="nota-adicional">
+            *Este buzón es monitoreado por el área de Dirección.
+        </p>
+
+    </div>
+</div>
+
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+<script>
+    // Configuración para el carrusel de Noticias
+    const swiperNoticias = new Swiper(".swiperNoticias", {
+        loop: true,
+        spaceBetween: 20, 
+        slidesPerView: 3, 
+        
+        pagination: {
+            el: ".swiper-pagination-noticias",
+            clickable: true, // Esto permite usar los círculos para navegar
+        },
+        
+        // mueva automáticamente
+        autoplay: {
+           //tiempo en moverse
+            delay: 1400, 
+            disableOnInteraction: false, 
+            pauseOnMouseEnter: true,
+        },
+        
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+            },
+            320: {
+                slidesPerView: 1,
+            }
+        }
+    });
+</script>
+
+<script>
+    
+    document.querySelector(".panel-opcion:nth-child(3)").onclick = function() {
+        document.getElementById("modalValoracion").style.display = "flex";
+    };
+
+    document.querySelector(".panel-opcion:nth-child(4)").onclick = function() {
+        document.getElementById("modalQuejas").style.display = "flex";
+    };
+
+    
+    document.querySelectorAll(".cerrar").forEach(btn => {
+        btn.onclick = function() {
+            btn.parentElement.parentElement.style.display = "none";
+        };
+    });
+
+    
+    window.onclick = function(e){
+        if(e.target.classList.contains("modal")){
+            e.target.style.display = "none";
+        }
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        #zona-hover{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 100vh;
+            z-index: 999;
+        }
+
+        #panel{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #5C1A1A;
+            overflow-x: hidden;
+            transition: 0.4s;
+            padding-top: 60px;
+            color: beige;
+            box-shadow: 4px 0 10px rgba(0,0,0,0.3);
+            z-index: 998;
+        }
+
+        #zona-hover:hover + #panel,
+        #panel:hover{
+            width: 260px;
+        }
+
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(44, 13, 13, 0.7);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav{
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo{
+            color: beige;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0 0 6px rgba(255,255,255,0.4);
+        }
+
+        nav ul{
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li{
+            list-style: none;
+        }
+
+        nav ul li a{
+            padding: 6px 10px;
+            color: beige;
+            text-decoration: none;
+            font-weight: 500;
+            transition: .4s;
+        }
+
+        nav ul li a:hover{
+            color: #FFD9A0;
+            text-shadow: 0 0 8px rgba(255,218,170,0.6);
+        }
+
+        
+        .hero{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 70px;
+            text-align: left;
+            background:
+                linear-gradient(135deg, #520e0e, #702525) 0 0 / 50% 100% no-repeat,
+                linear-gradient(135deg, #F2E6D8, #ebc9a0) 100% 0 / 50% 100% no-repeat;
+        }
+
+        .hero-content{
+            width: 50%;
+            padding-left: 5%;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            text-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+
+        .hero-content h1{
+            font-size: 58px;
+            margin-bottom: 20px;
+            color:white;
+            text-shadow: 0 0 12px rgba(255,255,255,0.4);
+            line-height: 1.1;
+            font-weight: 700;
+        }
+
+        .hero-content p{
+            width: 80%;
+            font-size: 26px;
+            color: #f7f7f7;
+            margin-bottom: 30px;
+        }
+        .hero-left .descripcion{
+    width: 85%;
+    font-size: 22px;
+    margin-top: 10px;
+    line-height: 1.4;
+    color: #f7f2e8;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+
+        .hero-right{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-right img{
+    width: 85%;
+    max-width: 420px;
+    border-radius: 18px;
+    padding: 10px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+        .seccion{
+            min-height: 100vh;
+            padding: 120px 20px;
+            background: #F2E6D8;
+            text-align: center;
+       /** este estilo es para los botones de redes sociales en el ultimmo section**/
+            position: relative;
+        }
+
+        .seccion:nth-child(even){
+            background: #E8D8C4;
+        }
+
+        .seccion h2{
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #5C1A1A;
+        }
+
+        .seccion p{
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #3A0A0A;
+        }
+        
+.hero-top-logo{
+    position: absolute;
+    top: 50px; 
+    left: 60px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-top-logo img{
+    width: 55px;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
+    border-radius: 8px;
+}
+
+.hero-top-logo span{
+    font-size: 20px;
+    font-weight: 600;
+    color: beige;
+    text-shadow: 0 0 8px rgba(255,255,255,0.45);
+}
+
+
+.mySwiper {
+    width: 100%;
+    height: 350px; 
+    border-radius: 0;
+    padding: 0!important;
+    margin: 120px!important;
+    box-shadow: none !important;
+}
+
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    display: block;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    filter: drop-shadow(0 0 5px black);
+}
+
+
+.swiper-pagination {
+    bottom: 10px !important;
+}
+.panel-opcion {
+    margin: 20px 0;
+    padding: 12px;
+    font-size: 18px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.panel-opcion:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+
+.modal-contenido {
+    width: 70%;
+    max-width: 850px;
+    height: 430px;
+    background: #F2E6D8;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+
+.cerrar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #5C1A1A;
+    font-weight: bold;
+}
+
+.cerrar:hover {
+    color: #B88A64;
+}
+
+
+/** carousel noticias **/
+
+
+.swiperNoticias {
+    width: 90%; 
+    height: 270px; 
+    margin: 40px auto;
+    /
+}
+.card {
+    
+    width: 100%; 
+    height: 100%;
+    padding: 1em;
+    background: rgb(245, 225, 148);
+    font-size: 1.5rem; 
+    border-radius: .2em;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next-noticias,
+.swiper-button-prev-noticias {
+    display: none;
+}
+
+/** BOTONES REDES SOCIALES**/
+
+.social-networks {
+    position: absolute; 
+    bottom: 30px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: center;
+    margin-top: 0; 
+}
+
+.social-networks a {
+    display: inline-flex;
+    color: #ffffff; 
+    height: 48px;
+    width: 48px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: transform 0.4s;
+}
+
+/* Efecto al pasar el mouse */
+.social-networks a:hover {
+    transform: scale(1.3); 
+}
+
+.social-networks a.facebook {
+    background-color: #3b5998; 
+}
+
+.social-networks a.instagram {
+    background-color: #e1306c; 
+}
+
+.social-networks a.tiktok {
+    
+    background-color: #000000; 
+}
+
+/**ESTILOS CORREO DE QUEJAS**/
+
+/** ESTILOS PARA EL CORREO EN MODAL (Actualización) **/
+
+/* 1. Estilo para la instrucción o llamada a la acción */
+.modal-contenido .instruccion-modal {
+    max-width: 90%;
+    margin: 20px auto 30px auto; /* Espacio debajo de la instrucción */
+    font-size: 1.1rem;
+    color: #3A0A0A;
+    font-weight: 500;
+}
+
+/* 2. Contenedor Flexbox para alinear el ícono y el texto (NUEVA CLASE) */
+.modal-contenido .contacto-email-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    padding: 15px 25px; /* Espacio interno para el "bloque" de correo */
+    margin: 10px auto;
+    border: 2px solid #D2B48C; /* Borde sutil para resaltar */
+    border-radius: 10px;
+    max-width: 450px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto visual al pasar el ratón por el bloque de correo */
+.modal-contenido .contacto-email-container:hover {
+    background-color: #F8F5F0; 
+}
+
+/* 3. Estilo del Ícono de Gmail */
+.modal-contenido .gmail-icon {
+    font-size: 2em;
+    color: #DB4437; 
+    margin-right: 15px; /* Más espacio entre ícono y texto */
+    min-width: 30px; /* Asegura un tamaño mínimo */
+}
+
+/* 4. Estilo del Enlace de Correo */
+.modal-contenido .contacto-email-container a {
+    color: #5C1A1A; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem; /* Hace el texto más legible */
+    transition: color 0.3s;
+}
+
+.modal-contenido .contacto-email-container a:hover {
+    color: #B88A64;
+    text-decoration: underline; 
+}
+
+/* 5. Estilo para la nota pequeña */
+.modal-contenido .nota-adicional {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #777;
+}
